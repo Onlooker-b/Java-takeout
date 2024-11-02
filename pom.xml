@@ -18,6 +18,7 @@
         <module>sky-server</module>
     </modules>
     <properties>
+        <java.version>11</java.version>
         <mybatis.spring>2.2.0</mybatis.spring>
         <lombok>1.18.20</lombok>
         <fastjson>1.2.76</fastjson>
@@ -33,6 +34,10 @@
     </properties>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+            </dependency>
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
